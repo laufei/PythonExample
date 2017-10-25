@@ -1,0 +1,14 @@
+# coding: uft-8
+'''
+求一个3*3矩阵对角线元素之和。
+'''
+
+a = []
+sum = 0.0
+for i in range(3):
+    a.append([])
+    for j in range(3):
+        a[i].append(float(raw_input("input num:\n")))
+for i in range(3):
+    sum += a[i][i]
+print sum
