@@ -12,9 +12,8 @@ money = [1000000, 600000, 400000, 200000, 100000, 0]
 ratio = [0.01, 0.015, 0.03, 0.05, 0.075, 0.1]
 input = long(raw_input("Please input the money:"))
 result = 0L
-for i in money:
-    if input > i:
-        result+=(input-i)*ratio[money.index(i)]
-        print result
-        input = i
+for i, v in enumerate(money):
+    if input > v:
+        result+=(input-v)*ratio[i]
+        input = v
 print result
