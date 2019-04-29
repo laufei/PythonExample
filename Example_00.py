@@ -1,19 +1,26 @@
 # coding: utf-8
-__author__ = 'liufei'
+class Solution(object):
+    def __init__(self):
+        self.r, self.t = 1, 1
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        l = len(s)
+        if l == 0:
+            return 0
+        for i in range(l-1):
+            rl = [s[i]]
+            for j in range(i+1, l):
+                rl.append(s[j])
+                if len(rl) == len(list(set(rl))):
+                    self.t +=1
+                    if self.t > self.r:
+                        self.r = self.t
+                        print "[%s, %s]" % (i, j), self.t, self.r, rl
+            else:
+                self.t = 1
+        return self.r
 
-input = 'beeeeegiiinnnnnnnn'
-lenght = len(input)
-print lenght
-begin = 0
-offset = 0
-for i in range(lenght-1):
-    print "i", i
-    tmp = 0
-    for j in range(i+1, lenght):
-        print "j", j
-        if input[i] == input[j]:
-            tmp += 1
-        if tmp > offset:
-            begin = i
-            offset = tmp
-print "最长的字符串是: %s" % input[begin:begin+offset+1]
+print Solution().lengthOfLongestSubstring("aaaaaaaaaaaabbbbbbbbbbbbbbbbbbcccccccccccccdasdfaea4rq34yw46io6798pu;i")
