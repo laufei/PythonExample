@@ -6,7 +6,7 @@ __author__ = 'liufei'
 def fn(x, y):
     tmp = 0
     result = 0
-    for i in range(y):
+    for _ in range(y):
         item = tmp*10+x
         result += item
         tmp = item
