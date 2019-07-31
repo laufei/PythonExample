@@ -6,6 +6,7 @@
 # @File    : 二叉树遍历-递归.py
 # @Software: PyCharm
 
+
 class Node(object):
     def __init__(self, data, next=None):
         self.val = data
