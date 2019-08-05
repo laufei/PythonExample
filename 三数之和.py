@@ -14,13 +14,10 @@
 def testFun(list):
     result = []
     list_len = len(list)
-    for i in range(list_len - 2):
-        a = list[i]
-        for j in range(i+1, list_len - 1):
-            b = list[j]
-            for k in range(j+1, list_len):
-                c = list[k]
-                tmp_list = [a, b, c]
+    for i in list[:-2]:
+        for j in list[1:-1]:
+            for k in list[2:]:
+                tmp_list = [i, j, k]
                 if sum(tmp_list) == 0:
                     r = sorted(tmp_list)
                     if r not in result:
