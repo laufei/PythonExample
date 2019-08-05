@@ -34,3 +34,4 @@ if __name__ == "__main__":
         ps.append(Process(target=produce, args=(c,)))
     for p in ps:
         p.start()
+        p.join()
