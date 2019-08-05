@@ -7,30 +7,29 @@
 # @Software: PyCharm
 
 def testFun(str):
-    sLen = len(str)
-    if not sLen:
-        raise Exception, "输入的字符串长度不能为0"
-    elif 1 == sLen:
-        return str
+    str_len = len(str)
+    if str_len < 2:
+        return str_len
 
-    index = 0
-    rLen = 1
-    for i in range(sLen-1):
-        tmp = 0
-        for j in range(i+1, sLen):
-            a = len(set(str[i:j]))
-            b = len(str[i:j])
-            if a == b:
+    result = 1
+    begin = 0
+    tmp_list = []
+    for i in range(str_len - 1):
+        tmp = 1
+        tmp_list.append(str[i])
+        for j in range(i+1, str_len):
+            tmp_list.append(str[j])
+            if len(set(tmp_list)) == len(tmp_list):
                 tmp += 1
-                print "i=%d, j=%d, a=%d, b=%d, tmp=%d" % (i, j, a, b, tmp)
+                if tmp > result:
+                    result = tmp
+                    begin = i
             else:
+                tmp_list = []
                 break
-        if tmp > rLen:
-            index = i
-            rLen = tmp
-    print index, rLen
-    return str[index: index+rLen]
+    return str[begin:begin+result]
+
 
 if __name__ == "__main__":
-    str = "bccccdeeeeefadbbb"
+    str = "aaabbbbcccccaaaaaabcd"
     print testFun(str)
