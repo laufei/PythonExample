@@ -13,15 +13,15 @@
 
 class Node(object):
     def __init__(self, data, next=None):
-        self.val = data
-        self.next = next
+        self._val = data
+        self._next = next
 
 def reverseList(head):
     pre = None
     cur = head
     while cur:
-        tmp = cur.next
-        cur.next = pre
+        tmp = cur._next
+        cur._next = pre
         pre = cur
         cur = tmp
     return pre
@@ -29,8 +29,8 @@ def reverseList(head):
 #测试用例
 if __name__ == '__main__':
     l1 = Node(3)
-    l1.next = Node(2)
-    l1.next.next = Node(1)
-    l1.next.next.next = Node(9)
+    l1._next = Node(2)
+    l1._next._next = Node(1)
+    l1._next._next._next = Node(9)
     l = reverseList(l1)
-    print (l.val, l.next.val, l.next.next.val, l.next.next.next.val)
+    print (l._val, l._next._val, l._next._next._val, l._next._next._next._val)
