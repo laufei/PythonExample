@@ -5,9 +5,9 @@
 
 def fn(n):
     a, b = 0, 1
-    result = [a]
-    for i in range(n-1):
-        a, b = b, a + b
+    result = []
+    for i in range(n):
         result.append(a)
+        a, b = b, a + b
     return result
-print fn(36)
+print fn(10)
