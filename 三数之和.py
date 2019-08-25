@@ -19,9 +19,8 @@ def testFun(list):
             for k in list[2:]:
                 tmp_list = [i, j, k]
                 if sum(tmp_list) == 0:
-                    r = sorted(tmp_list)
-                    if r not in result:
-                        result.append(r)
+                    if tmp_list not in result:
+                        result.append(tmp_list)
     return result
 
 if __name__ == "__main__":
