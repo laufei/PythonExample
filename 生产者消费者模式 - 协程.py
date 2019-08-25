@@ -21,10 +21,10 @@ def produce(c):
     n = 0
     while n < 5:
         n = n + 1
-        # time.sleep(random.randint(1,3))
+        time.sleep(random.randint(1,3))
         print('[PRODUCER] Producing %s...' % n)
-        t = c.send(n)
-        print('[PRODUCER] Consumer return: %s' % t)
+        r = c.send(n)
+        print('[PRODUCER] Consumer return: %s' % r)
     c.close()
 
 if __name__ == "__main__":
