@@ -7,9 +7,9 @@ __author__ = 'liufei'
 '''
 
 def fn(x):
-    a, b = 1, 0
-    for i in range(x-1):
-        b = (a+1)*2
-        a = b
-    return b
+    tmp, result = 1, 0
+    for _ in range(x-1):
+        tmp = (tmp + 1) * 2
+        result = tmp
+    return result
 print fn(10)

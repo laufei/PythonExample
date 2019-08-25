@@ -5,13 +5,11 @@ __author__ = 'liufei'
 '''
 # coding: utf-8
 def fn(h, t):
-    route = h
-    hight = route/2
-    for i in range(1, t):
-        if t == 1:
-            break
-        route += hight*2
-        hight /= 2
-    return route, hight
+    path = h
+    high = h/2
+    for i in range(t-1):
+        path += high*2
+        high = high/2
+    return path, high
 
 print fn(float(raw_input("请输入起始高度:")), int(raw_input("请输入反弹次数:")))

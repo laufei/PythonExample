@@ -8,8 +8,8 @@ def fn(x, y):
     result = 0
     for _ in range(y):
         item = tmp*10+x
-        result += item
         tmp = item
+        result += item
     return result
 
 print fn(int(raw_input("请输入计算数字:")), int(raw_input("请输入循环次数:")))
