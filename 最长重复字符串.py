@@ -7,27 +7,34 @@
 # @Software: PyCharm
 
 def testFun(str):
-    sLen = len(str)
-    if not sLen:
+    strLen = len(str)
+    if not strLen:
         raise Exception, "输入的字符串长度不能为0"
-    elif 1 == sLen:
+    elif 1 == strLen:
         return str
 
-    index = 0
-    rLen = 1
-    for i in range(sLen-1):
+    indexBegin = 0
+    indeEnd = 1
+    for i in range(strLen-1):
         tmp = 1
-        for j in range(i+1, sLen):
+        for j in range(i+1, strLen):
             if str[i] == str[j]:
                 tmp += 1
             else:
                 break
-        if tmp > rLen:
-            index = i
-            rLen = tmp
-    print index, rLen
-    return str[index: index+rLen]
+        if tmp > indeEnd:
+            indexBegin = i
+            indeEnd = tmp
+    return str[indexBegin:indexBegin+indeEnd]
 
 if __name__ == "__main__":
-    str = "ffffa"
-    print testFun(str)
+    str1 = "ffffa"
+    str2 = "f"
+    str3 = "faff"
+    str4 = "ffffabbbbb"
+    str5 = "xxxxxxxxxxabbbdddcccfffffffff"
+    print testFun(str1)
+    print testFun(str2)
+    print testFun(str3)
+    print testFun(str4)
+    print testFun(str5)
