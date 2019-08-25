@@ -107,30 +107,31 @@ for i in range(1000000, 1100000):
 '''
 
 # 7. 测试多线程锁机制
-'''
+"""
 # coding : uft-8
-import threading, time
+from threading import Thread, Lock
+import time
 class MyThread():
     n = 1
     def run(self, lock):
         time.sleep(1)
-        if lock.acquire():
-            print self.n, threading.Thread
-            self.n += 1
-            lock.release()
+        lock.acquire()
+        print self.n, Thread
+        self.n += 1
+        lock.release()
 
 if "__main__" == __name__:
     ThreadList = []
-    lock = threading.Lock()
+    lock = Lock()
     mt = MyThread()
     for i in range(1, 200):
-        t = threading.Thread(target=mt.run, args=(lock,))
+        t = Thread(target=mt.run, args=(lock,))
         ThreadList.append(t)
     for t in ThreadList:
         t.start()
     for t in ThreadList:
         t.join()
-'''
+"""
 
 # 8. 测试python-jenkins库
 '''
@@ -256,7 +257,7 @@ if __name__=='__main__':
 '''
 
 # 14. 多进程加锁测试2
-'''
+"""
 import time
 import random
 import os
@@ -291,7 +292,7 @@ if __name__ == '__main__':
         p=Process(target=task,args=(mutex,))
         p.start()
         # p.join()
-'''
+"""
 
 # 15. 多进程信号量测试
 '''
@@ -440,7 +441,6 @@ def pasrse_page(res):
     parse_res='url:<%s> size:[%s]\n' %(res['url'],len(res['text']))
     with open('db.txt','a') as f:
         f.write(parse_res)
-
 
 if __name__ == '__main__':
     urls=[
@@ -1392,13 +1392,13 @@ t.join()
 print('thread %s ended.' % threading.current_thread().name)
 '''
 
-# 42.
-
-'''
+# 42.ThreadLocal
+"""
 import threading
+from threading import Thread, local
 
 # 创建全局ThreadLocal对象:
-local_school = threading.local()
+local_school = local()
 
 def process_student():
     # 获取当前线程关联的student:
@@ -1410,13 +1410,14 @@ def process_thread(name):
     local_school.student = name
     process_student()
 
-t1 = threading.Thread(target= process_thread, args=('Alice',), name='Thread-A')
-t2 = threading.Thread(target= process_thread, args=('Bob',), name='Thread-B')
-t1.start()
-t2.start()
-t1.join()
-t2.join()
-'''
+threads = []
+for i in range(10):
+    threads.append(Thread(target= process_thread, args=('Alice',), name='Thread-A'))
+    threads.append(Thread(target= process_thread, args=('Bob',), name='Thread-B'))
+for t in threads:
+    t.start()
+    t.join()
+"""
 
 # 43.
 '''
@@ -1692,10 +1693,11 @@ if __name__ == "__main__":
 '''
 
 #54. 反转Dict中的key和value
+"""
 d = {'a': 1, 'b': 2, 'c': 3}
 def revert_dict(source):
     return dict([(v, k) for k, v in d.items()])
 
 if __name__ == "__main__":
     print revert_dict(d)
-
+"""
