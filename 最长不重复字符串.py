@@ -28,5 +28,11 @@ def testFun(str):
 
 
 if __name__ == "__main__":
-    str = "aaabbbbcccccaaaaaabcd"
-    print testFun(str)
+    str1 = "aaabbbbcccccaaaaaabcd"
+    str2 = "aa"
+    str3 = "a"
+    str4 = "abccccccccccccccc"
+    print testFun(str1)
+    print testFun(str2)
+    print testFun(str3)
+    print testFun(str4)
