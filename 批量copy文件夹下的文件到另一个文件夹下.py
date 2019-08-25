@@ -32,7 +32,7 @@ def main():
     os.mkdir(new_folder_name)
 
     p = Pool(5)
-    q = Manager().Queue()
+    q = Manager().Queue() # 进程池中的队列要使用Manag对象下的Queue
     for f in filenames:
         p.apply_async(func=copy_file, args=(f, folder_path, new_folder_name, q,))
 
