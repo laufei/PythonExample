@@ -33,8 +33,10 @@ if __name__ == "__main__":
     str3 = "faff"
     str4 = "ffffabbbbb"
     str5 = "xxxxxxxxxxabbbdddcccfffffffff"
+    str6 = "xxxxxx"
     print testFun(str1)
     print testFun(str2)
     print testFun(str3)
     print testFun(str4)
     print testFun(str5)
+    print testFun(str6)
