@@ -10,14 +10,13 @@ def testFun(list):
     list_len = len(list)
     if list_len < 2:
         return list_len
-    count, tmp = 0, 0
+    count, tmp = 1, 1
     for i in range(list_len-1):
         if list[i] < list[i+1]:
             tmp += 1
-            if tmp > count:
-                count = tmp
+            count = max(tmp, count)
         else:
-            tmp = 0
+            tmp = 1
     return count
 
 if __name__ == "__main__":

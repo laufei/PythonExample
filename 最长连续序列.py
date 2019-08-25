@@ -25,3 +25,8 @@ class Solution(object):
             else:
                 tmp = 1
         return count
+
+if __name__ == "__main__":
+    l = [21,22,23,1,2,3,4,6,5]
+    s = Solution()
+    print (s.longestConsecutive(l))
