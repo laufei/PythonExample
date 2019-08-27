@@ -43,6 +43,6 @@ def wordBreak(s, wordDict):
 
     return breakp[-1] == len(s)
 '''
-s = "leetcode"
-wordDict = ["leet", "code"]
+s = "ab"
+wordDict = ["a", "b"]
 print wordBreak(s, wordDict)
