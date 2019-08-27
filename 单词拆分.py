@@ -15,14 +15,14 @@ def wordBreak(s, wordDict):
     if not wordDict:
         return False
 
-    breakp = [0]
+    cursor = [0]
 
     for i in range(len(s) + 1):
-        for j in breakp:
+        for j in cursor:
             if s[j:i] in wordDict:
-                breakp.append(i)
+                cursor = [i]
                 break
-    return breakp[-1] == len(s)
+    return cursor[0] == len(s)
 
 '''
 def wordBreak(s, wordDict):
