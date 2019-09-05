@@ -38,6 +38,21 @@ def afterTraverse(root):
     afterTraverse(root.right)
     print(root.value)
 
+def level_queue(root):
+    """利用队列实现树的层次遍历"""
+    if root == None:
+        return
+    myQueue = []
+    node = root
+    myQueue.append(node)
+    while myQueue:
+        node = myQueue.pop(0)
+        print node.value,
+        if node.left != None:
+            myQueue.append(node.left)
+        if node.right != None:
+            myQueue.append(node.right)
+
 if __name__ == '__main__':
     root = Node(
         value='D',
@@ -69,3 +84,5 @@ if __name__ == '__main__':
     print('后序遍历：')
     afterTraverse(root)
     print('\n')
+    print('层次遍历：')
+    level_queue(root)

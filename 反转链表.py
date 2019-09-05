@@ -20,10 +20,11 @@ def reverseList(head):
     pre = None
     cur = head
     while cur:
-        tmp = cur._next
-        cur._next = pre
-        pre = cur
-        cur = tmp
+        # tmp = cur._next
+        # cur._next = pre
+        # pre = cur
+        # cur = tmp
+        cur._next, pre, cur = pre, cur, cur._next
     return pre
 
 #测试用例
@@ -32,5 +33,6 @@ if __name__ == '__main__':
     l1._next = Node(2)
     l1._next._next = Node(1)
     l1._next._next._next = Node(9)
+    print (l1._val, l1._next._val, l1._next._next._val, l1._next._next._next._val)
     l = reverseList(l1)
     print (l._val, l._next._val, l._next._next._val, l._next._next._next._val)
