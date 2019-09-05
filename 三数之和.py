@@ -6,23 +6,31 @@
 # @File    : 三数之和.py
 # @Software: PyCharm
 
-'''
-给定一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？找出所有满足条件且不重复的三元组。
-注意：答案中不可以包含重复的三元组。
-'''
-
-def testFun(list):
-    result = []
+def three_sum_1(list, target):
     list_len = len(list)
-    for i in list[:-2]:
-        for j in list[1:-1]:
-            for k in list[2:]:
-                tmp_list = [i, j, k]
-                if sum(tmp_list) == 0:
-                    if tmp_list not in result:
-                        result.append(tmp_list)
-    return result
+    for i in range(list_len-2):
+        for j in range(i+1, list_len-1):
+            for k in range(j+1, list_len):
+                tmp = sum([list[i], list[j], list[k]])
+                if tmp == target:
+                    return i, j, k
+    return None
+
+def three_sum_2(list, targe):
+    tmp = {}
+    list_len = len(list)
+    for i in range(list_len-1):
+        for j in range(list_len):
+            a = list[i]
+            b = list[j]
+            c = targe - a - b
+            if c not in tmp:
+                tmp[a] = i
+                tmp[b] = j
+            else:
+                return i, tmp[c], j
 
 if __name__ == "__main__":
-    list = [1,-1,-1,0]
-    print testFun(list)
+    list = [7, 5, 1, 9]
+    print three_sum_1(list, 17)
+    print three_sum_2(list, 17)
