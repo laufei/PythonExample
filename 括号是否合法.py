@@ -28,9 +28,25 @@ def isValid_2(s):
             return not stack
     return not stack
 
+def isValid_3(s):
+    start='{(['
+    end='})]'
+    cnt=[1,1,1]
+    for i in s:
+        if i in start:
+            cnt[start.index(i)]+=1
+        elif i in end:
+            cnt[end.index(i)]-=1
+        if not all(cnt):
+            return False
+    return all(cnt)
+
 print isValid_1("({(){}[{}()]})")
 print isValid_2("({(){}[{}()]})")
+print isValid_3("({(){}[{}()]})")
 print isValid_1("")
 print isValid_2("")
+print isValid_3("")
 print isValid_1("{]}")
 print isValid_2("{]}")
+print isValid_3("{]}")
