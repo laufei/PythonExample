@@ -2,9 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eab3d771-6311-45a3-9f34-5ee4b7cccf66" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 三数之和.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 三角形的最大周长.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 二分查找.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 二叉树遍历-递归.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 二数之和.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 冒泡排序.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 单例模式.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 单词拆分.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 反正Dict中的key和value.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 反转字符串中的单词.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 各位相加.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 多进程队列应用.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 大文本处理.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 字典排序.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 快速排序.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 找出相等的数字.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 找到所有数组中消失的数字.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 最长不重复字符串.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 最长公共前缀.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 最长连续序列.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 最长连续递增序列.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 最长重复字符串.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 有效的字母异位词.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 检查IP有效性.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 生成器.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/1. 递归计算阶乘.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 三数之和等于0.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 二维二分查找.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 反转链表.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 合并两个有序列表为一个有序列表.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 括号是否合法.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 求两个字符串类型的数字的和.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 汉诺塔步数.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 生产者消费者模式 - 协程.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 生成器实现斐波那契序列.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 进程池-同步.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 进程池-异步.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/2. 队列Queue实现进程间通信.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3. 批量copy文件夹下的文件到另一个文件夹下.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3. 滑动窗口中的最大值.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3. 用链表实现冒泡排序.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3. 第k大元素.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3. 链表是否存在环.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/3. 链表相邻节点反转.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4. 实现数据结构 - 单向链表.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4. 正则基础.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/4. 设计链表.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/PythonExample.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/cssxfire.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/链表是否存在环.py" afterPath="$PROJECT_DIR$/链表是否存在环.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/链表相邻节点反转.py" afterPath="$PROJECT_DIR$/链表相邻节点反转.py" />
     </list>
     <ignored path="PythonExample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,28 +78,7 @@
     <favorites_list name="PythonExample" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="链表是否存在环.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/链表是否存在环.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="133" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="链表相邻节点反转.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/链表相邻节点反转.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31447586">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -499,12 +529,24 @@
       <option name="project" value="LOCAL" />
       <updated>1567759847057</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="--">
+      <created>1567761737572</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567761737572</updated>
+    </task>
+    <task id="LOCAL-00006" summary="--">
+      <created>1567762214548</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567762214548</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="23" width="1633" height="1027" extended-state="6" />
-    <editor active="true" />
+    <frame x="47" y="23" width="1633" height="1027" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -513,7 +555,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3304813" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26524198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26524198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -743,16 +785,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/链表是否存在环.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.6855241">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="133" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/链表相邻节点反转.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31447586">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding />
         </state>
       </provider>
