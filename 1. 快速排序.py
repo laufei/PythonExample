@@ -9,7 +9,7 @@
 
 def quick_sort(b):
     blen = len(b)
-    if blen < 2:
+    if blen < 2:    #注意,使用递归算法, 这个判断必须要有
         return b
     mid = b[blen/2]
     left, right = [], []
