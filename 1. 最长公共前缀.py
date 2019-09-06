@@ -15,15 +15,17 @@
 '''
 
 def testFunc(strs):
-    if not strs:
-        return ""
-    s1 = min(strs)
-    s2 = max(strs)
-    for i,x in enumerate(s1):
-        if x != s2[i]:
-            return s2[:i]
-    return s1
+	result = ""
+	sLen = len(strs)
+	if sLen < 2:
+		return -1
+	str_min = min(strs)
+	str_max = max(strs)
+	for i, v in enumerate(str_min):
+		if v == str_max[i]:
+			result += v
+	return result
 
 if __name__ == "__main__":
-    strs = ["flower","flow","flight"]
-    print testFunc(strs)
+	strs = ["flower","flow","flight"]
+	print testFunc(strs)

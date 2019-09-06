@@ -7,7 +7,6 @@
 # @Software: PyCharm
 
 def testFunc(input):
-    result = 1
     if input == 1:
         return 1
     else:
