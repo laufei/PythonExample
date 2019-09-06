@@ -17,36 +17,26 @@ def isValid_1(s):
     return not stack
 
 def isValid_2(s):
+    """
+        三种失败的情况:
+        1. [(}]    2. ([]     3. [])
+    """
     stack = []
     paren_map = {"(": ")", "[": "]", "{": "}"}
     for c in s:
         if c in paren_map:
             stack.append(c)
+        elif not stack:
+            return  False   # 覆盖失败情况1, 3
         elif paren_map[stack[-1]] == c:
             stack.pop()
-        else:
-            return not stack
-    return not stack
-
-def isValid_3(s):
-    start='{(['
-    end='})]'
-    cnt=[1,1,1]
-    for i in s:
-        if i in start:
-            cnt[start.index(i)]+=1
-        elif i in end:
-            cnt[end.index(i)]-=1
-        if not all(cnt):
-            return False
-    return all(cnt)
+    return not stack      # 覆盖失败情况2
 
 print isValid_1("({(){}[{}()]})")
 print isValid_2("({(){}[{}()]})")
-print isValid_3("({(){}[{}()]})")
-print isValid_1("")
-print isValid_2("")
-print isValid_3("")
-print isValid_1("{]}")
-print isValid_2("{]}")
-print isValid_3("{]}")
+print isValid_1("([})")
+print isValid_2("([})")
+print isValid_1("([]")
+print isValid_2("([]")
+print isValid_1("[])")
+print isValid_2("[])")
