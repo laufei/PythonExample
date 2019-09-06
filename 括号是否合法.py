@@ -19,7 +19,7 @@ def isValid_1(s):
 def isValid_2(s):
     """
         三种失败的情况:
-        1. [(}]    2. ([]     3. [])
+        1. [(}]   2. [])  3. ([]
     """
     stack = []
     paren_map = {"(": ")", "[": "]", "{": "}"}
@@ -27,10 +27,10 @@ def isValid_2(s):
         if c in paren_map:
             stack.append(c)
         elif not stack:
-            return  False   # 覆盖失败情况1, 3
+            return  False   # 覆盖失败情况1, 2
         elif paren_map[stack[-1]] == c:
             stack.pop()
-    return not stack      # 覆盖失败情况2
+    return not stack      # 覆盖失败情况3
 
 print isValid_1("({(){}[{}()]})")
 print isValid_2("({(){}[{}()]})")
