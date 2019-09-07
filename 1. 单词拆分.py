@@ -12,17 +12,17 @@ def wordBreak(s, wordDict):
     :type wordDict: List[str]
     :rtype: bool
     """
-    if not wordDict:
+    if not s:
         return False
 
-    cursor = [0]
+    breakp = [0]
 
     for i in range(len(s) + 1):
-        for j in cursor:
+        for j in breakp:
             if s[j:i] in wordDict:
-                cursor = [i]
+                breakp.append(i)
                 break
-    return cursor[0] == len(s)
+    return breakp[-1] == len(s)
 
 '''
 def wordBreak(s, wordDict):
@@ -43,6 +43,6 @@ def wordBreak(s, wordDict):
 
     return breakp[-1] == len(s)
 '''
-s = "ab"
-wordDict = ["a", "b"]
+s = "aaaaaaa"
+wordDict = ["aa", "aaaaa"]
 print wordBreak(s, wordDict)
