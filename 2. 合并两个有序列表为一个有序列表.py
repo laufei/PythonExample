@@ -17,7 +17,6 @@ def merge(l1,l2):
             else:
                 l.append(l2[i2])
                 i2 += 1
-            print i1, i2
         if i1 < len(l1):
             l.extend(l1[i1:])
         if i2 < len(l2):
