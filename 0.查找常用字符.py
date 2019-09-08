@@ -12,29 +12,25 @@ https://leetcode-cn.com/problems/find-common-characters/
 """
 
 def commonChars_1(A):
-    """
-    :type A: List[str]
-    :rtype: List[str]
-    """
-    res=[]
-    if not A:
-        return res
-    key = set(A[0])
-    for k in key:
-        minnum = min(a.count(k) for a in A)
-        res += minnum*k
-    return res
+	res = []
+	if not A:
+		return res
+	key = set(A[0])
+	for k in key:
+		minnum = min([a.count(k) for a in A])
+		res += k*minnum
+	return res
 
 def commonChars_2(A):
-    from collections import Counter
-    from functools import reduce
+	from collections import Counter
+	from functools import reduce
 
-    res = []
-    d = reduce(lambda x,y: x & y, map(Counter, A))
-    for k, v in d.items():
-        res += [k] * v
-    return res
+	res = []
+	d = reduce(lambda x,y: x & y, map(Counter, A))
+	for k, v in d.items():
+		res += [k] * v
+	return res
 
-s = ["bella","label","roller"]
+s = ["bella", "label", "roller"]
 print(commonChars_1(s))
 print(commonChars_2(s))
