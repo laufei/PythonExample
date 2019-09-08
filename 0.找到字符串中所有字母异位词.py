@@ -17,31 +17,33 @@
 """
 
 def findAnagrams(s, p):
+	"""
+	思路:
+	想象一个窗口在s上向右移动,窗口宽度为len(p)
+	只要窗口内的字符串各字符数量与p中一致,则匹配成功
+	窗口在向右移动的时候,只需要将最左端的值从字典中删除,将最右端+1的值加入字典即可.
+	"""
 
-    # 思路:
-    # 想象一个窗口在s上向右移动,窗口宽度为len(p)
-    # 只要窗口内的字符串各字符数量与p中一致,则匹配成功
-    # 窗口在向右移动的时候,只需要将最左端的值从字典中删除,将最右端+1的值加入字典即可.
+	rlist = []
+	pmap = {}
+	for i in p:
+		pmap[i] = pmap.get(i, 0) + 1
+	print(pmap)
+	plenth = len(p)
 
-    pmap = {}
-    for i in p:
-        pmap[i] = pmap.get(i,0) + 1
-    plenth = len(p)
+	smap = {}
+	for i, v in enumerate(s):
+		smap[v] = smap.get(v, 0) + 1
+		print(v, smap)
+		if smap == pmap:
+			rlist.append(i-plenth+1)
+		if i - plenth + 1 >= 0:     # 如果遍历的长度>=p的长度
+			smap[s[i-plenth + 1]] = smap.get(s[i-plenth + 1]) - 1   # 在遍历下个元素v只前, 将最左元素的个数-1
+			if smap[s[i-plenth + 1]] == 0:                                      # 如果计数为0, 则删掉, 否则影响2个dict的对比
+				del smap[s[i-plenth + 1]]
+		print(v, smap)
+	return rlist
 
-    rlist = []
-    rmap = {}
-
-    for i , v in enumerate(s):
-        rmap[v] = rmap.get(v,0) + 1
-        if rmap == pmap:
-            rlist.append(i-plenth+1)
-        if i - plenth + 1 >= 0:
-            rmap[s[i-plenth + 1]] = rmap.get(s[i-plenth + 1]) - 1
-            if rmap[s[i-plenth + 1]] == 0:
-                del rmap[s[i-plenth + 1]]
-
-    return rlist
-
-s = "cbaebabacd"
+s = "babccbaebabacd"
 p = "abc"
 print(findAnagrams(s, p))
