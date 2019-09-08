@@ -8,6 +8,7 @@
 输入：A = ["amazon","apple","facebook","google","leetcode"], B = ["e","o"]
 输出：["facebook","google","leetcode"]
 """
+
 def wordSubsets(A, B):
 	def count(word):
 		ans = [0] * 26
@@ -26,6 +27,6 @@ def wordSubsets(A, B):
 			ans.append(a)
 	return ans
 
-A = ["amazon","apple","facebook","google","leetcode"]
-B = ["e","o"]
+A = ["amazon", "apple", "facebook", "google", "leetcode"]
+B = ["ec", "oc", "ceo"]
 print(wordSubsets(A, B))
