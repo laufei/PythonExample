@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eab3d771-6311-45a3-9f34-5ee4b7cccf66" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0.找到字符串中所有字母异位词.py" afterPath="$PROJECT_DIR$/0.找到字符串中所有字母异位词.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0.单词子集.py" afterPath="$PROJECT_DIR$/0.单词子集.py" />
     </list>
     <ignored path="PythonExample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,21 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="0.单词子集.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="0.单词子集.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/0.单词子集.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0.找到字符串中所有字母异位词.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/0.找到字符串中所有字母异位词.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55074877">
-              <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
+            <state vertical-scroll-proportion="0.91014975">
+              <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -112,7 +102,6 @@
         <option value="$PROJECT_DIR$/other/4. 数组的相对排序.py" />
         <option value="$PROJECT_DIR$/0. 数组的相对排序.py" />
         <option value="$PROJECT_DIR$/0.删除字符串中的所有相邻重复项.py" />
-        <option value="$PROJECT_DIR$/0.单词子集.py" />
         <option value="$PROJECT_DIR$/0.使括号有效的最少添加.py" />
         <option value="$PROJECT_DIR$/0.替换后的最长重复字符.py" />
         <option value="$PROJECT_DIR$/0. 拼写单词.py" />
@@ -121,6 +110,7 @@
         <option value="$PROJECT_DIR$/0.重复的子字符串.py" />
         <option value="$PROJECT_DIR$/0.查找常用字符.py" />
         <option value="$PROJECT_DIR$/0.找到字符串中所有字母异位词.py" />
+        <option value="$PROJECT_DIR$/0.单词子集.py" />
       </list>
     </option>
   </component>
@@ -677,7 +667,13 @@
       <option name="project" value="LOCAL" />
       <updated>1567915724637</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="--">
+      <created>1567915818640</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1567915818640</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -925,14 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0.单词子集.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0.第N个数字.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -949,6 +937,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/0.找到字符串中所有字母异位词.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.281198">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/0.替换后的最长重复字符.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -957,10 +953,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0.找到字符串中所有字母异位词.py">
+    <entry file="file://$PROJECT_DIR$/0.单词子集.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55074877">
-          <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
+        <state vertical-scroll-proportion="0.91014975">
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
           <folding />
         </state>
       </provider>
