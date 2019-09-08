@@ -1,18 +1,18 @@
 # coding: utf-8
 
 def get_target_value(key, dic, tmp_list):
-	if not isinstance(dic, dict) or not isinstance(tmp_list, list):  # 对传入数据进行格式校验
+	if not isinstance(dic, dict) or not isinstance(tmp_list, list):
 		return '输入的参数类型错误!'
 
 	if key in dic.keys():
-		tmp_list.append(dic[key])  # 传入数据存在则存入tmp_list
+		tmp_list.append(dic[key])
 	else:
-		for value in dic.values():  # 传入数据不符合则对其value值进行遍历
+		for value in dic.values():
 			if isinstance(value, dict):
-				get_target_value(key, value, tmp_list)  # 传入数据的value值是字典，则直接调用自身
+				get_target_value(key, value, tmp_list)
 			elif isinstance(value, (list, tuple)):
 				for v in value:
-					get_target_value(key, v, tmp_list)  # 传入数据的value值是列表或者元组，则调用_get_value
+					get_target_value(key, v, tmp_list)
 	return tmp_list
 
 if __name__ == "__main__":
