@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eab3d771-6311-45a3-9f34-5ee4b7cccf66" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0.分割数组.py" afterPath="$PROJECT_DIR$/0.分割数组.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0.第N个数字.py" afterPath="$PROJECT_DIR$/0.第N个数字.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0.重复的子字符串.py" afterPath="$PROJECT_DIR$/0.重复的子字符串.py" />
     </list>
     <ignored path="PythonExample.iws" />
@@ -20,7 +18,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PythonExample$1__Dictkeyvalue.coverage" NAME="1. 反正Dict中的key和value Coverage Results" MODIFIED="1567765668947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonExample$0_.coverage" NAME="0.分割数组 Coverage Results" MODIFIED="1567911523973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonExample$0_.coverage" NAME="0.重复的子字符串 Coverage Results" MODIFIED="1567912305894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonExample$.coverage" NAME="链表相邻节点反转 Coverage Results" MODIFIED="1567761626161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonExample$0__.coverage" NAME="0. 数组的相对排序 Coverage Results" MODIFIED="1567905830964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonExample$1__.coverage" NAME="1. 单词拆分 Coverage Results" MODIFIED="1567860566724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -37,16 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="0.分割数组.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/0.分割数组.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6236934">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="0.单词子集.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/0.单词子集.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -61,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/0.找到字符串中所有字母异位词.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -97,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="0.重复的子字符串.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="0.重复的子字符串.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/0.重复的子字符串.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.7637271">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -150,9 +138,9 @@
         <option value="$PROJECT_DIR$/0.替换后的最长重复字符.py" />
         <option value="$PROJECT_DIR$/0.找到字符串中所有字母异位词.py" />
         <option value="$PROJECT_DIR$/0. 拼写单词.py" />
-        <option value="$PROJECT_DIR$/0.重复的子字符串.py" />
         <option value="$PROJECT_DIR$/0.第N个数字.py" />
         <option value="$PROJECT_DIR$/0.分割数组.py" />
+        <option value="$PROJECT_DIR$/0.重复的子字符串.py" />
       </list>
     </option>
   </component>
@@ -250,7 +238,7 @@
       <recent name="$PROJECT_DIR$/Done" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.0.分割数组">
+  <component name="RunManager" selected="Python.0.重复的子字符串">
     <configuration default="false" name="0.重复的子字符串" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -558,8 +546,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.0.分割数组" />
-        <item index="1" class="java.lang.String" itemvalue="Python.0.重复的子字符串" />
+        <item index="0" class="java.lang.String" itemvalue="Python.0.重复的子字符串" />
+        <item index="1" class="java.lang.String" itemvalue="Python.0.分割数组" />
         <item index="2" class="java.lang.String" itemvalue="Python.0. 数组的相对排序" />
         <item index="3" class="java.lang.String" itemvalue="Python.0. 拼写单词" />
         <item index="4" class="java.lang.String" itemvalue="Python.0.找到字符串中所有字母异位词" />
@@ -685,7 +673,13 @@
       <option name="project" value="LOCAL" />
       <updated>1567872243597</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="--">
+      <created>1567911529003</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1567911529003</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -917,26 +911,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0.第N个数字.py">
+    <entry file="file://$PROJECT_DIR$/0.分割数组.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.6236934">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0.重复的子字符串.py">
+    <entry file="file://$PROJECT_DIR$/0.单词子集.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0.查找常用字符.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -952,23 +938,31 @@
     <entry file="file://$PROJECT_DIR$/0.找到字符串中所有字母异位词.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0.单词子集.py">
+    <entry file="file://$PROJECT_DIR$/0.查找常用字符.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0.分割数组.py">
+    <entry file="file://$PROJECT_DIR$/0.第N个数字.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6236934">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0.重复的子字符串.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7637271">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding />
         </state>
       </provider>
