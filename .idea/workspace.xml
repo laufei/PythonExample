@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eab3d771-6311-45a3-9f34-5ee4b7cccf66" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BFS&amp;DFS.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0.遍历Json获取所有的keys.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BFS&amp;DFS.py" afterPath="$PROJECT_DIR$/0.BFS&amp;DFS.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PythonExample.iws" />
@@ -17,6 +18,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/PythonExample$get_dict_allkeys.coverage" NAME="get_dict_allkeys Coverage Results" MODIFIED="1567938719648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonExample$1__Dictkeyvalue.coverage" NAME="1. 反正Dict中的key和value Coverage Results" MODIFIED="1567765668947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonExample$0_.coverage" NAME="0.单词子集 Coverage Results" MODIFIED="1567916305505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonExample$.coverage" NAME="链表相邻节点反转 Coverage Results" MODIFIED="1567761626161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -37,21 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="1. 二叉树遍历-递归.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1. 二叉树遍历-递归.py">
+      <file leaf-file-name="0.遍历Json获取所有的keys.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/0.遍历Json获取所有的keys.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BFS&amp;DFS.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BFS&amp;DFS.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4703833">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.6855241">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,6 +97,8 @@
         <option value="$PROJECT_DIR$/0.第N个数字.py" />
         <option value="$PROJECT_DIR$/3. 链表相邻节点反转.py" />
         <option value="$PROJECT_DIR$/BFS.py" />
+        <option value="$PROJECT_DIR$/get_dict_allkeys.py" />
+        <option value="$PROJECT_DIR$/0.遍历Json获取所有的keys.py" />
       </list>
     </option>
   </component>
@@ -202,25 +196,7 @@
       <recent name="$PROJECT_DIR$/Done" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.BFS">
-    <configuration default="false" name="0.查找常用字符" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonExample" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0.查找常用字符.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.get_dict_allkeys">
     <configuration default="false" name="0.找到字符串中所有字母异位词" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -288,7 +264,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonExample" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BFS&amp;DFS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0.BFS&amp;DFS.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="get_dict_allkeys" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonExample" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0.遍历Json获取所有的keys.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -502,19 +496,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.0.查找常用字符" />
-      <item index="1" class="java.lang.String" itemvalue="Python.0.找到字符串中所有字母异位词" />
-      <item index="2" class="java.lang.String" itemvalue="Python.0.单词子集" />
-      <item index="3" class="java.lang.String" itemvalue="Python.3. 链表相邻节点反转" />
-      <item index="4" class="java.lang.String" itemvalue="Python.BFS" />
+      <item index="0" class="java.lang.String" itemvalue="Python.0.找到字符串中所有字母异位词" />
+      <item index="1" class="java.lang.String" itemvalue="Python.0.单词子集" />
+      <item index="2" class="java.lang.String" itemvalue="Python.3. 链表相邻节点反转" />
+      <item index="3" class="java.lang.String" itemvalue="Python.BFS" />
+      <item index="4" class="java.lang.String" itemvalue="Python.get_dict_allkeys" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.BFS" />
-        <item index="1" class="java.lang.String" itemvalue="Python.3. 链表相邻节点反转" />
-        <item index="2" class="java.lang.String" itemvalue="Python.0.单词子集" />
-        <item index="3" class="java.lang.String" itemvalue="Python.0.找到字符串中所有字母异位词" />
-        <item index="4" class="java.lang.String" itemvalue="Python.0.查找常用字符" />
+        <item index="0" class="java.lang.String" itemvalue="Python.get_dict_allkeys" />
+        <item index="1" class="java.lang.String" itemvalue="Python.BFS" />
+        <item index="2" class="java.lang.String" itemvalue="Python.3. 链表相邻节点反转" />
+        <item index="3" class="java.lang.String" itemvalue="Python.0.单词子集" />
+        <item index="4" class="java.lang.String" itemvalue="Python.0.找到字符串中所有字母异位词" />
       </list>
     </recent_temporary>
   </component>
@@ -685,7 +679,13 @@
       <option name="project" value="LOCAL" />
       <updated>1567923041903</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="--">
+      <created>1567927988451</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1567927988451</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -697,7 +697,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3304813" sideWeight="0.5021999" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3304813" sideWeight="0.4978001" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3304813" sideWeight="0.4978001" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.4978001" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26838467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -989,18 +989,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/0.BFS&amp;DFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18815331">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/1. 二叉树遍历-递归.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.32612312">
           <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BFS&amp;DFS.py">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm50/python_stubs/348993582/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4703833">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.33296704">
+          <caret line="309" column="4" selection-start-line="309" selection-start-column="4" selection-end-line="309" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24292845">
+          <caret line="290" column="0" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0.遍历Json获取所有的keys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6855241">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
