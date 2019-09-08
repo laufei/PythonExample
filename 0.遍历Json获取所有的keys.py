@@ -20,26 +20,26 @@ def get_dict_allkeys(dic):
 		return key_list
 
 # 测试
-dict01 = {
-                    "A": 1,
-                    "B": {
-                        "Bkk": {
-                            "Bnn": 111,
-                            "Bpp": "ppoii"
-                        },
-                        "Byy": "123aa",
-                        "Buu": "777aa"
-                    },
-                    "C": [{
-                        "Ca": 1,
-                        "Cb": 2
-                    }, {
-                        "Caa": 3,
-                        "Cbb": 4
-                    }, {
-                        "Caaa": 5,
-                        "Cbbb": 6
-                    }]
-            }
+dict01 = '''{
+				"A": 1,
+				"B": {
+                "Bkk": {
+                    "Bnn": 111,
+                    "Bpp": "ppoii"
+                },
+                "Byy": "123aa",
+                "Buu": "777aa"
+            },
+            "C": [{
+                "Ca": 1,
+                "Cb": 2
+            }, {
+                "Caa": 3,
+                "Cbb": 4
+            }, {
+                "Caaa": 5,
+                "Cbbb": 6
+            }]
+    }'''
 
 print(get_dict_allkeys(dict01))
