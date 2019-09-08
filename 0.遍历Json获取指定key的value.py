@@ -15,6 +15,19 @@ def get_target_value(key, dic, tmp_list):
 					get_target_value(key, v, tmp_list)
 	return tmp_list
 
+def get_all_keys(dic, res_list):
+	if not isinstance(dic, dict) or not isinstance(res_list, list):
+		return '输入的参数类型错误!'
+
+	for k, v in dic.items():
+		res_list.append(k)
+		if isinstance(v, dict):
+			get_all_keys(v, res_list)
+		elif isinstance(v, (list, tuple)):
+			for vv in v:
+				get_all_keys(vv, res_list)
+	return res_list
+
 if __name__ == "__main__":
 	dict01 = '''{
 		"A": 1,
@@ -260,6 +273,8 @@ if __name__ == "__main__":
 	d1 = json.loads(dict01)
 	print(get_target_value("Bpp", d1, []))
 	print(get_target_value("Cb", d1, []))
+	print(get_all_keys(d1, []))
 	d2 = json.loads(dict02)
 	print(get_target_value("be_restrained_hero", d2, []))
 	print(get_target_value("equip_choice", d2, []))
+	print(get_all_keys(d2, []))
