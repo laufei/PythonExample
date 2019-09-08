@@ -1,11 +1,5 @@
 # coding: utf-8
 
-# @Time    : 2019/9/7 10:00 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 0.第N个数字.py
-# @Software: PyCharm
-
 """
 https://leetcode-cn.com/problems/nth-digit/solution/han-shu-er-fen-cha-zhao-by-iponder/
 在无限的整数序列 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...中找到第 n 个数字。

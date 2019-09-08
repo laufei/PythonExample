@@ -14,20 +14,22 @@ left 要尽可能小。
 """
 
 def partitionDisjoint(A):
-    """
-    :type A: List[int]
-    :rtype: int
-    """
-    lmaxv = A[0]
-    maxv = A[0]
-    l = 0
-    for i in range(len(A)):
-        if A[i] < lmaxv:
-            lmaxv = maxv
-            l = i
-        elif A[i] > maxv:
-            maxv = A[i]
-    return l + 1
+	if not A:
+		return -1
 
-A = [5,0,3,8,6]
+	leftMax = A[0]
+	allMax = A[0]
+	l = 0
+	for i in range(1, len(A)):
+		allMax = max(allMax, A[i])
+		if A[i] < leftMax:
+			leftMax = allMax
+			l = i
+	return l + 1
+
+A = [4, 0, 3, 5, 8, 6]
+B = [3, 0, 5, 8, 6]
+C = [0, 3, 5, 8, 6]
 print(partitionDisjoint(A))
+print(partitionDisjoint(B))
+print(partitionDisjoint(C))
