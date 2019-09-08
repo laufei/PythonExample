@@ -10,11 +10,6 @@ https://leetcode-cn.com/problems/nth-digit/solution/han-shu-er-fen-cha-zhao-by-i
 """
 
 def findNthDigit(n):
-    """
-    :type n: int
-    :rtype: int
-    """
-
     def func(x):
         if x == 0: return 0
         a = len(str(x))
