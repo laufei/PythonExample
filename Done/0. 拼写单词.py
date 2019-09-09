@@ -18,15 +18,16 @@
 解释：
 可以形成字符串 "cat" 和 "hat"，所以答案是 3 + 3 = 6。
 """
+
 import collections
 def countCharacters(words, chars):
-	ans = 0
-	cnt = collections.Counter(chars)
+	res = 0
+	cdict = collections.Counter(chars)
 	for w in words:
-		c = collections.Counter(w)
-		if all([c[i] <= cnt[i] for i in c]):
-			ans += len(w)
-	return ans
+		wdict = collections.Counter(w)
+		if all([wdict[i] <= cdict[i] for i in w]):
+			res += len(w)
+	return res
 
 words = ["cat","bt","hat","tree"]
 chars = "atach"
