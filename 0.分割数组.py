@@ -23,9 +23,9 @@ def partitionDisjoint(A):
 	for i in range(1, len(A)):
 		allMax = max(allMax, A[i])
 		if A[i] < leftMax:
+			l = i + 1
 			leftMax = allMax
-			l = i
-	return l + 1
+	return l
 
 A = [4, 0, 3, 5, 8, 6]
 B = [3, 0, 5, 8, 6]
