@@ -40,7 +40,6 @@ def _get_keys(val, res_list):
 		elif isinstance(val_, (list, tuple)):
 			_get_keys(val_, res_list)
 
-
 if __name__ == "__main__":
 	dict01 = '''{
 		"A": 1,
@@ -56,11 +55,11 @@ if __name__ == "__main__":
 			"Ca": 1,
 			"Cb": 2
 		}, {
-			"Caa": 3,
-			"Cbb": 4
+			"Ca": 3,
+			"Cb": 4
 		}, {
-			"Caaa": 5,
-			"Cbbb": 6
+			"Ca": 5,
+			"Cb": 6
 		}]
 	}'''
 
@@ -92,11 +91,9 @@ if __name__ == "__main__":
 
 	import json
 	d1 = json.loads(dict01)
-	print(get_target_value("Bpp", d1, []))
 	print(get_target_value("Cb", d1, []))
 	print(get_all_keys(d1, []))
 
 	d3 = json.loads(dict03)
-	print(get_target_value("a", d3, []))
 	print(get_target_value("g", d3, []))
 	print(get_all_keys(d3, []))
