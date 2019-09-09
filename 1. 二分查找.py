@@ -1,17 +1,6 @@
 # coding: utf-8
-
-# @Time    : 2019/8/25 8:11 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 二分查找.py
-# @Software: PyCharm
 class Solution(object):
     def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
         if len(nums) == 0:
             return -1
 

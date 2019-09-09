@@ -1,11 +1,4 @@
 # coding: utf-8
-
-# @Time    : 2019/7/31 10:26 AM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 二叉树遍历-递归.py
-# @Software: PyCharm
-
 class Node:
     def __init__(self, value=None, left=None, right=None):
         self.value = value

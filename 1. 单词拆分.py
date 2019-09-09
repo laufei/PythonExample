@@ -7,11 +7,6 @@
 # @Software: PyCharm
 
 def wordBreak(s, wordDict):
-    """
-    :type s: str
-    :type wordDict: List[str]
-    :rtype: bool
-    """
     if not s:
         return False
 
