@@ -1,11 +1,5 @@
 # coding: utf-8
 
-# @Time    : 2019/7/31 6:39 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 三数之和.py
-# @Software: PyCharm
-
 def three_sum_1(list, target):
     list_len = len(list)
     for i in range(list_len-2):
@@ -17,10 +11,10 @@ def three_sum_1(list, target):
     return None
 
 def three_sum_2(list, targe):
-    tmp = {}
     list_len = len(list)
     for i in range(list_len-1):
-        for j in range(list_len):
+        tmp = {}
+        for j in range(i+1, list_len):
             a = list[i]
             b = list[j]
             c = targe - a - b

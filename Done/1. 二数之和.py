@@ -1,11 +1,5 @@
 # coding: utf-8
 
-# @Time    : 2019/9/5 8:58 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 二数之和.py
-# @Software: PyCharm
-
 def two_sum_1(li, num):
     for i in range(len(li)-1):
         for j in range(i+1, len(li)):
