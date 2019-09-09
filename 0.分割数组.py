@@ -29,7 +29,9 @@ def partitionDisjoint(A):
 
 A = [4, 0, 3, 5, 8, 6]
 B = [3, 0, 5, 8, 6]
-C = [0, 3, 5, 8, 6]
+C = [0, 5, 3, 8, 6]
+D = [32, 57, 24, 19, 0, 24, 49, 67, 87, 87]
 print(partitionDisjoint(A))
 print(partitionDisjoint(B))
 print(partitionDisjoint(C))
+print(partitionDisjoint(D))
