@@ -18,7 +18,7 @@ arr2 中的每个元素都出现在 arr1 中
 输出：[2,2,2,1,4,3,3,9,6,7,19]
 """
 def relativeSortArray(arr1, arr2):
-    arr2 += sorted(set(arr1)-set(arr2))
+    arr2.extend(sorted(set(arr1)-set(arr2)))
     arr1.sort(key=arr2.index)
     return arr1
 
