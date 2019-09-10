@@ -25,21 +25,21 @@ def findAnagrams(s, p):
 	"""
 
 	rlist = []
+	plenth = len(p)
 	pmap = {}
 	for i in p:
 		pmap[i] = pmap.get(i, 0) + 1
-	print(pmap)
-	plenth = len(p)
 
 	smap = {}
 	for i, v in enumerate(s):
 		smap[v] = smap.get(v, 0) + 1
+		tmp = i-plenth+1
 		if smap == pmap:
-			rlist.append(i-plenth+1)        # 加一是因为索引从0开始的
+			rlist.append(tmp)        # 加一是因为索引从0开始的
 		if i - plenth + 1 >= 0:               # 如果遍历的长度>=p的长度
-			smap[s[i-plenth + 1]] = smap.get(s[i-plenth + 1]) - 1   # 在遍历下个元素v之前, 将最左元素的个数-1
-			if smap[s[i-plenth + 1]] == 0:                                       # 如果计数为0, 则在滑动窗口dict中删掉, 否则影响2个dict的对比
-				del smap[s[i-plenth + 1]]
+			smap[s[tmp]] = smap.get(s[tmp]) - 1   # 在遍历下个元素v之前, 将最左元素的个数-1
+			if smap[s[tmp]] == 0:                                       # 如果计数为0, 则在滑动窗口dict中删掉, 否则影响2个dict的对比
+				del smap[s[tmp]]
 	return rlist
 
 s = "babccbaebabacd"

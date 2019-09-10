@@ -12,14 +12,12 @@ https://leetcode-cn.com/problems/find-common-characters/
 """
 
 def commonChars_1(A):
-	res = []
-	if not A:
-		return res
-	key = set(A[0])
-	for k in key:
-		minnum = min([a.count(k) for a in A])
-		res += k*minnum
-	return res
+	result = []
+	seed = set(A[0])
+	for i in seed:
+		count = min([a.count(i) for a in A])
+		result += i*count
+	return result
 
 def commonChars_2(A):
 	from collections import Counter

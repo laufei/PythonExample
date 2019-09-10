@@ -1,11 +1,5 @@
 # coding: utf-8
 
-# @Time    : 2019/9/7 9:13 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 0. 数组的相对排序.py
-# @Software: PyCharm
-
 """
 给你两个数组，arr1 和 arr2，
 
