@@ -13,7 +13,7 @@ def three_sum_1(list, target):
 def three_sum_2(nums, targe):
     result = set()
     li_len = len(nums)
-    for i in range(li_len -1):
+    for i in range(li_len - 1):
         dic = {}
         for j in range(i+1, li_len):
             a = nums[i]
