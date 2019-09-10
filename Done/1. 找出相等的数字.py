@@ -17,7 +17,7 @@ def get_2dup(source):
 
 def get_2dup_counter(source):
     result = Counter(source)
-    return [k for k, v in result.items() if v ==2]
+    return [k for k, v in result.items() if v == 2]
 
 # # 不使用 python 标准库
 # def get_2dup(candidates):

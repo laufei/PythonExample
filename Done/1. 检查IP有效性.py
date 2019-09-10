@@ -17,16 +17,20 @@ def testFunc(ip):
         except:
             return False
         result = 256 > i >= 0
-    return result
+        if not result:
+            return False
+    return True
 
 if __name__ == "__main__":
-    ip1 = "10.1.1"
+    ip0 = "10.1.11.1"
+    ip1 = "10.1.1111.1"
     ip2 = "asdfasdf"
     ip3 = "a.b.c.d"
     ip4 = "10.0."
     ip5 = "10.1.1.1.1"
     ip6 = "10a.1.1.1i"
     ip7 = "10.1.1.10i"
+    print testFunc(ip0)
     print testFunc(ip1)
     print testFunc(ip2)
     print testFunc(ip3)
