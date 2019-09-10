@@ -21,6 +21,8 @@ def _get_value(key, val, tmp_list):
 		elif isinstance(val_, (list, tuple)):
 			_get_value(key, val_, tmp_list)
 
+'''============================================================'''
+
 def get_all_keys(dic, res_list):
 	if not isinstance(dic, dict) or not isinstance(res_list, list):
 		return '输入的参数类型错误!'

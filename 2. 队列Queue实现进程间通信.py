@@ -1,11 +1,5 @@
 # coding: utf-8
 
-# @Time    : 2019/7/30 3:40 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 队列Queue实现进程间通信.py
-# @Software: PyCharm
-
 from multiprocessing import Process, Queue
 import time
 # 向队列中写入数据
