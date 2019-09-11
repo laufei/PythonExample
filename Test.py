@@ -1701,3 +1701,31 @@ def revert_dict(source):
 if __name__ == "__main__":
     print revert_dict(d)
 """
+
+class Foo():
+
+	a = 0
+	b = 1
+
+	def __init__(self):
+		self.name = "luca"
+
+	@staticmethod
+	def t4static1():
+		Foo.t4static2()
+		print "this is a staticmethod1"
+
+	@staticmethod
+	def t4static2():
+		print "this is a staticmethod2"
+
+	@classmethod
+	def t4class(cls):
+		print cls.a
+
+t = Foo()
+print t.name
+Foo.t4class()
+Foo.t4static1()
+t.t4class()
+t.t4static1()

@@ -9,13 +9,33 @@ graph = {
 }
 
 def BFS(graph, begin):
-	"""广度优先使用队列实现"""
-	pass
+	queue = []
+	queue.append(begin)
+	seen = set()
+	seen.add(begin)
+	while(queue):
+		key = queue.pop(0)
+		value = graph[key]
+		for v in value:
+			if v not in seen:
+				queue.append(v)
+				seen.add(v)
+		print key
 
 BFS(graph, "A")
 
 def DFS(graph, begin):
-	"""深度优先使用栈实现"""
-	pass
+	stack = []
+	stack.append(begin)
+	seen = set()
+	seen.add(begin)
+	while(stack):
+		key = stack.pop(-1)
+		value = graph[key]
+		for v in value:
+			if v not in seen:
+				stack.append(v)
+				seen.add(v)
+		print key
 
 DFS(graph, "A")
