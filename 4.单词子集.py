@@ -5,8 +5,8 @@
 如果对 B 中的每一个单词 b，b 都是 a 的子集，那么我们称 A 中的单词 a 是通用的。
 你可以按任意顺序以列表形式返回 A 中所有的通用单词。
 
-输入：A = ["amazon","apple","facebook","google","leetcode"], B = ["e","o"]
-输出：["facebook","google","leetcode"]
+输入：A = ["amazon","apple","facebook","google","leetcode"], B = ["ec", "oc", "ceo"]
+输出：['facebook', 'leetcode']
 """
 
 def wordSubsets(A, B):
