@@ -11,5 +11,26 @@
 ]
 """
 
+def fn(nums, target):
+	i = 0
+	max_i = len(nums) - 1
+	j = len(nums[0]) - 1
+	while i <= max_i and j >= 0:
+		if nums[i][j] == target:
+			return True
+		elif nums[i][j] > target:
+			j = j - 1
+		else:
+			i = i + 1
+	return False
+
+
+nums = [
+	[1,3,5,7],
+	[8,10,15,20],
+	[80, 87, 93, 100]
+]
+print(fn(nums, 15))
+print(fn(nums, 14))
 
 
