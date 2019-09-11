@@ -10,7 +10,7 @@ def findLengthOfLCIS(nums):
         if nums[i] > nums[i - 1]:
             count += 1
             maxc = max(count, maxc)
-            begin = i -  maxc + 1
+            begin = i - maxc + 1
         else:
             count = 1
     return nums[begin: begin + maxc]
