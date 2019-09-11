@@ -1,18 +1,22 @@
 # coding: utf-8
 
-# @Time    : 2019/7/29 4:18 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 冒泡排序.py
-# @Software: PyCharm
+def bubbleSort(arr):
+    n = len(arr)
 
-def testFun(l):
-    slen = len(l)
-    for i in range(slen-1):
-        for j in range(i+1, slen):
-            if l[i] > l[j]:
-                l[i], l[j] = l[j], l[i]
-    print l
+    # 遍历所有数组元素
+    for i in range(n):
 
-testFun([1, 2, 6, 4, 23, 3, 5])
+        # Last i elements are already in place
+        for j in range(0, n-i-1):
+
+            if arr[j] > arr[j+1] :
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+arr = [64, 34, 25, 12, 22, 11, 90]
+
+bubbleSort(arr)
+
+print ("排序后的数组:")
+for i in range(len(arr)):
+    print ("%d" %arr[i]),
 
