@@ -1,6 +1,5 @@
 # coding: utf-8
 
-
 def longestConsecutive(nums):
 	if len(nums) < 2:
 		return len(nums)

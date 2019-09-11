@@ -1,11 +1,5 @@
 # coding: utf-8
 
-# @Time    : 2019/7/31 6:02 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 最长连续递增序列.py
-# @Software: PyCharm
-
 def findLengthOfLCIS(nums):
     if len(nums) < 2:
         return len(nums)
