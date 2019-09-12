@@ -6,7 +6,7 @@ def maxSlidingWindow(nums, k):
 	window, res = [], []
 	for i, x in enumerate(nums):
 		print "i= %d, k= %d, windows= %s, res= %s" % (i, k, window, res)
-		if i >= k and window[0] <= i - k:                       # 删除掉window范围左侧的值
+		if i >= k and i >= window[0] + k:                       # 删除掉window范围左侧的值
 			window.pop(0)
 		while window and nums[window[-1]] <= x:     # window中的值小于刚刚进入窗口的值
 			window.pop(-1)
