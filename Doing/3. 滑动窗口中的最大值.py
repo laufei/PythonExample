@@ -1,7 +1,8 @@
 # coding: utf-8
 
 def maxSlidingWindow(nums, k):
-	if not nums: return []
+	if not nums:
+		return []
 	window, res = [], []
 	for i, x in enumerate(nums):
 		print "i= %d, k= %d, windows= %s, res= %s" % (i, k, window, res)
