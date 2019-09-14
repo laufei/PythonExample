@@ -1,11 +1,5 @@
 # coding: utf-8
 
-# @Time    : 2019/8/24 10:18 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 找出相等的数字.py
-# @Software: PyCharm
-
 from collections import Counter
 
 source = [1, 3, 8, 9, 15, 12, 15, 3, 3, 9]
