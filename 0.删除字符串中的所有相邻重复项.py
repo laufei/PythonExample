@@ -1,14 +1,12 @@
 # coding: utf-8
 
 def removeDuplicates(S):
-    # 初始化栈
     stack = []
-    # 遍历栈元素
-    for e in S:
-        if stack and stack[-1] == e:
+    for i in S:
+        if stack and stack[-1] == i:
             stack.pop(-1)
         else:
-            stack.append(e)
+            stack.append(i)
     return "".join(stack)
 
 S = "abbaca"

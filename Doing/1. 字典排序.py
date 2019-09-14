@@ -13,6 +13,6 @@ dict = {
             1: {'k': 1, 'v': 'one'},
             10: {'k': 10, 'v': 'ten'},
 }
-result = OrderedDict(sorted(dict.items(), key=lambda x:x[0]))
+result = OrderedDict(sorted(dict.items(), key=lambda x: x[0]))
 print dict.items()
 print result.items()
