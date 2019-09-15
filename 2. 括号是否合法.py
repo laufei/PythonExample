@@ -1,11 +1,5 @@
 # coding: utf-8
 
-# @Time    : 2019/9/3 12:14 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 括号是否合法.py
-# @Software: PyCharm
-
 def isValid_1(s):
     stack = []
     paren_map = {")": "(", "]": "[", "}": "{"}

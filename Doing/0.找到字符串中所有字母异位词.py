@@ -24,7 +24,23 @@ def findAnagrams(s, p):
 	窗口在向右移动的时候,只需要将最左端的值从字典中删除,将最右端+1的值加入字典即可.
 	"""
 
+	rlist = []
+	plenth = len(p)
+	pmap = {}
+	for i in p:
+		pmap[i] = pmap.get(i, 0) + 1
 
+	smap = {}
+	for i, v in enumerate(s):
+		smap[v] = smap.get(v, 0) + 1
+		tmp = i-plenth+1
+		if smap == pmap:
+			rlist.append(tmp)        # 加一是因为索引从0开始的
+		if i - plenth + 1 >= 0:               # 如果遍历的长度>=p的长度
+			smap[s[tmp]] = smap.get(s[tmp]) - 1   # 在遍历下个元素v之前, 将最左元素的个数-1
+			if smap[s[tmp]] == 0:                                       # 如果计数为0, 则在滑动窗口dict中删掉, 否则影响2个dict的对比
+				del smap[s[tmp]]
+	return rlist
 
 s = "babccbaebabacd"
 p = "abc"
