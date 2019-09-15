@@ -10,14 +10,15 @@ from multiprocessing import Process
 import time, random
 
 def consumer():
-    r = ''
+    r = '我是初始值!'
     while True:
         n = yield r
         print('[CONSUMER] Consuming %s...' % n)
         r = '200 OK'
 
 def produce(c):
-    c.send(None) #启动生成器
+    r = c.send(None) #启动生成器
+    print('[PRODUCER] Consumer return: %s' % r)
     n = 0
     while n < 5:
         n = n + 1
