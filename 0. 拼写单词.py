@@ -19,16 +19,27 @@
 可以形成字符串 "cat" 和 "hat"，所以答案是 3 + 3 = 6。
 """
 
+def countCharacters_1(words, chars):
+    res = 0
+    dict_chars = {}
+    for i in chars:
+        dict_chars[i] = dict_chars.get(i, 0) + 1
+    for word in words:
+        if all([dict_chars.get(w, 0) >= word.count(w) for w in word]):
+            res += len(word)
+    return res
+
 import collections
-def countCharacters(words, chars):
+def countCharacters_2(words, chars):
 	res = 0
 	cdict = collections.Counter(chars)
 	for w in words:
 		wdict = collections.Counter(w)
-		if all([wdict[i] <= cdict[i] for i in w]):
+		if all([wdict[i] <= cdict.get(i, 0) for i in w]):
 			res += len(w)
 	return res
 
 words = ["cat","bt","hat","tree"]
 chars = "atach"
-print(countCharacters(words, chars))
+print(countCharacters_1(words, chars))
+print(countCharacters_2(words, chars))
