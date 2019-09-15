@@ -1,13 +1,6 @@
 # coding: utf-8
 
-# @Time: 2019/8/5 11:42 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File: 合并两个有序列表为一个有序列表.py
-# @Software: PyCharm
-
 def merge(l1, l2):
-	
 	i1, i2 = 0, 0
 	l = []
 	try:

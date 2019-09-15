@@ -1,11 +1,5 @@
 # coding: utf-8
 
-# @Time    : 2019/7/30 8:48 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 多进程队列应用.py
-# @Software: PyCharm
-
 from multiprocessing import Process, Queue
 import os, time, random
 

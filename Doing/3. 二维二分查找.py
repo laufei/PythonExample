@@ -19,9 +19,9 @@ def fn(nums, target):
 		if nums[i][j] == target:
 			return True
 		elif nums[i][j] > target:
-			j = j - 1
+			j -= 1
 		else:
-			i = i + 1
+			i += 1
 	return False
 
 

@@ -5,7 +5,6 @@ def wordBreak(s, wordDict):
         return False
 
     breakp = [0]
-
     for i in range(len(s) + 1):
         for j in breakp:
             if s[j:i] in wordDict:
