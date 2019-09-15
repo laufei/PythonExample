@@ -17,11 +17,15 @@ def deleteDuplicates(head):
             # 否则就继续判断下个节点与下下个节点间的关系
             p = p.next
     # 遍历完后，返回修改后的链表
-    return p
+    return head
 
 if __name__ == '__main__':
     l1 = Node(1)
     l1.next = Node(1)
     l1.next.next = Node(1)
     l1.next.next.next = Node(9)
-    print(deleteDuplicates(l1).val)
+    l1.next.next.next.next = Node(3)
+    p = deleteDuplicates(l1)
+    while p is not None:
+        print p.val
+        p = p.next

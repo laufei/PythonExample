@@ -1,13 +1,13 @@
 # coding: utf-8
 
-def removeDuplicates(shuzu):
+def removeDuplicates(li):
     i = 0
-    while i < len(shuzu)-1:
-        if shuzu[i] == shuzu[i+1]:
-            shuzu.remove(shuzu[i])
+    while i < len(li)-1:
+        if li[i] == li[i+1]:
+            li.remove(li[i])
         else:
             i += 1
-    return len(shuzu)
+    return li
 
-st = removeDuplicates([0,0,1,1,1,2,2,3,3,4])
+st = removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4])
 print(st)
