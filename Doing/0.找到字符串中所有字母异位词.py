@@ -15,7 +15,7 @@
 	起始索引等于 0 的子串是 "cba", 它是 "abc" 的字母异位词。
 	起始索引等于 6 的子串是 "bac", 它是 "abc" 的字母异位词。
 """
-
+import collections
 def findAnagrams(s, p):
 	"""
 	思路:
@@ -36,7 +36,7 @@ def findAnagrams(s, p):
 		tmp = i-plenth+1
 		if smap == pmap:
 			rlist.append(tmp)        # 加一是因为索引从0开始的
-		if i - plenth + 1 >= 0:               # 如果遍历的长度>=p的长度
+		if tmp >= 0:               # 如果遍历的长度>=p的长度
 			smap[s[tmp]] = smap.get(s[tmp]) - 1   # 在遍历下个元素v之前, 将最左元素的个数-1
 			if smap[s[tmp]] == 0:                                       # 如果计数为0, 则在滑动窗口dict中删掉, 否则影响2个dict的对比
 				del smap[s[tmp]]
