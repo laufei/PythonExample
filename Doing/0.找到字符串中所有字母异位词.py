@@ -15,7 +15,7 @@
 	起始索引等于 0 的子串是 "cba", 它是 "abc" 的字母异位词。
 	起始索引等于 6 的子串是 "bac", 它是 "abc" 的字母异位词。
 """
-import collections
+
 def findAnagrams(s, p):
 	"""
 	思路:
