@@ -1,11 +1,5 @@
 # coding: utf-8
 
-# @Time    : 2019/7/31 10:29 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 最长公共前缀.py
-# @Software: PyCharm
-
 '''
 编写一个函数来查找字符串数组中的最长公共前缀。
 如果不存在公共前缀，返回空字符串 ""。

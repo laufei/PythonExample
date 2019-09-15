@@ -1,17 +1,11 @@
 # coding: utf-8
 
-# @Time    : 2019/7/30 5:21 PM
-# @Author  : 'liufei'
-# @Email   : fei.liu@qyer.com
-# @File    : 生成器.py
-# @Software: PyCharm
-
 # 28. 生成器 & 迭代器练习
 # 生成器: 在Python中，这种一边循环一边计算的机制，称为生成器：generator
 # python中生成器是迭代器的一种，使用yield返回值函数，每次调用yield会暂停，而可以使用next()函数和send()函数恢复生成器。
 
 l = [1, 2, 3, 4, 5, 6, 7, 8]
-ll = map(lambda x: x+2, l )
+ll = map(lambda x: x+2, l)
 lll = reduce(lambda x,y: x*y, l)
 llll = [i+2 for i in l]
 print ll

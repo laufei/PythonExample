@@ -10,7 +10,25 @@
 注意：答案中不可以包含重复的三元组。
 '''
 
-def three_sum(li):
+def three_sum1(li):
+    if len(li) < 3:
+        return
+    li.sort()
+    res = set()
+    for i in range(len(li) - 1):
+        dic = {}
+        for j in range(i + 1, len(li)):
+            a = li[i]
+            b = li[j]
+            c = 0 - a - b
+            if c not in dic:
+                dic[a] = i
+                dic[b] = j
+            else:
+                res.add((a, c, b))
+    return map(list, res)
+
+def three_sum2(li):
     if len(li) < 3:
         return
     li.sort()
@@ -25,4 +43,5 @@ def three_sum(li):
     return map(list, res)
 
 li = [-1, 0, 1, 2, -1, -4]
-print three_sum(li)
+print three_sum1(li)
+print three_sum2(li)
