@@ -11,9 +11,8 @@
 def maxSubArray(nums):
     if len(nums) == 0:
         return 0
-    for i in range(1, len(nums)):
-        current_num = max(nums[i]+nums[i-1], nums[i])
-        nums[i] = current_num
+    for i in range(len(nums) - 1):
+        nums[i + 1] = max(nums[i] + nums[i + 1], nums[i + 1])
     return max(nums)
 
 print(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
